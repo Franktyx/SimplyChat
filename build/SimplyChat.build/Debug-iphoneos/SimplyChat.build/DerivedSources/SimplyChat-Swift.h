@@ -157,6 +157,13 @@ SWIFT_CLASS("_TtC10SimplyChat9SCMessage")
 @class UIImage;
 @class JSQMessagesBubbleImage;
 @class Firebase;
+@class UIBarButtonItem;
+@class JSQMessagesCollectionView;
+@class NSIndexPath;
+@class UICollectionView;
+@class UICollectionViewCell;
+@class NSAttributedString;
+@class JSQMessagesCollectionViewFlowLayout;
 
 SWIFT_CLASS("_TtC10SimplyChat23SCMessageViewController")
 @interface SCMessageViewController : JSQMessagesViewController
@@ -176,6 +183,15 @@ SWIFT_CLASS("_TtC10SimplyChat23SCMessageViewController")
 - (void)setupAvatarColor:(NSString * __nonnull)name incoming:(BOOL)incoming;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)receivedMessagePressed:(UIBarButtonItem * __nonnull)sender;
+- (void)didPressSendButton:(UIButton * __null_unspecified)button withMessageText:(NSString * __null_unspecified)text senderId:(NSString * __null_unspecified)senderId senderDisplayName:(NSString * __null_unspecified)senderDisplayName date:(NSDate * __null_unspecified)date;
+- (void)didPressAccessoryButton:(UIButton * __null_unspecified)sender;
+- (id <JSQMessageData> __null_unspecified)collectionView:(JSQMessagesCollectionView * __null_unspecified)collectionView messageDataForItemAtIndexPath:(NSIndexPath * __null_unspecified)indexPath;
+- (NSInteger)collectionView:(UICollectionView * __nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSAttributedString * __null_unspecified)collectionView:(JSQMessagesCollectionView * __null_unspecified)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath * __null_unspecified)indexPath;
+- (CGFloat)collectionView:(JSQMessagesCollectionView * __null_unspecified)collectionView layout:(JSQMessagesCollectionViewFlowLayout * __null_unspecified)collectionViewLayout heightForMessageBubbleTopLabelAtIndexPath:(NSIndexPath * __null_unspecified)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
