@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "abfb523e880989c280ed47e962e93c40"
+build_time: [507423898, 536807000]
+inputs:
+  "/Users/yuxiangtang1/Documents/SimplyChat/SimplyChat/SimplyChat/AppDelegate.swift": [507364056, 0]
+  "/Users/yuxiangtang1/Documents/SimplyChat/SimplyChat/SimplyChat/ViewController.swift": [507364056, 0]
+  "/Users/yuxiangtang1/Documents/SimplyChat/SimplyChat/SimplyChat/SCLoginPage.swift": [507364955, 0]
+  "/Users/yuxiangtang1/Documents/SimplyChat/SimplyChat/SimplyChat/SCMessageViewController.swift": [507423897, 0]
+  "/Users/yuxiangtang1/Documents/SimplyChat/SimplyChat/SimplyChat/SCMessage.swift": [507423625, 0]
