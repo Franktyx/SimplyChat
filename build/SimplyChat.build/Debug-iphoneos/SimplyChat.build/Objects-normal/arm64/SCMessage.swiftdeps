@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C10SimplyChat9SCMessage", ""]
 provides-dynamic-lookup:
-- "date_"
-- "isMediaMessage_"
-- "messageHash"
-- "senderDisplayName_"
-- "date"
-- "senderDisplayName"
-- "text_"
 - "isMediaMessage"
+- "date_"
+- "messageHash"
+- "text_"
+- "isMediaMessage_"
+- "date"
 - "senderId_"
 - "text"
-- "senderId"
+- "senderDisplayName_"
 - "hash_"
+- "senderId"
+- "senderDisplayName"
 depends-top-level:
-- "UInt"
-- "Int"
-- "SCMessage"
-- "JSQMessageData"
 - "String"
+- "JSQMessageData"
+- "Int"
 - "Bool"
 - "NSDate"
-- "NSObject"
 - !private "StringLiteralType"
+- "NSObject"
+- "UInt"
+- "SCMessage"
 depends-member:
 - !private ["PSs9AnyObject", "NSDate"]
 - !private ["PSs9AnyObject", "UInt"]
